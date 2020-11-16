@@ -3,7 +3,7 @@ package com.company;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
-
+//框架
 /*public class hello {
     public static void main(String[] args) {
 
@@ -19,6 +19,113 @@ public class hello {
         System.out.println("你好 Java");
     }
 }
+
+
+
+
+
+
+
+
+//方法的理解应用
+/*public class hello {
+    public static void main(String[] args) {
+
+        int c = add(4, 5);
+        System.out.println("c=" + c);
+        System.out.println("你好 Java");
+    }
+
+    public static int add(int a, int b) {
+        int c = a + b;
+        return c;
+    }
+}*/
+
+
+//对于super关键字的理解
+/*class person {
+    protected String name;
+    protected int age;
+
+   *//* public person() {//在父类中定义一个无参构造
+
+    }*//*
+
+    public person(String name, int age) {
+
+    }
+}
+
+class student extends person {
+    protected int score;
+
+    public student(String name, int age, int score) {
+        super(name, age);   //在子类中用super关键字直接调用
+        this.score = score;
+    }
+}*/
+
+
+/*
+public class hello {
+    public static void main(String[] args) {
+        student s = new student();
+        s.setName("王五");
+        s.setAge(21);
+        s.setSex("男");
+        s.setScore(98);
+        System.out.println("姓名：" + s.getName());
+        System.out.println("年龄：" + s.getAge());
+        System.out.println("性别：" + s.getSex());
+        System.out.println("得分：" + s.getScore());
+        System.out.println("你好 Java");
+    }
+}
+
+class person {
+    private String name;
+    private int age;
+    private String sex;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+}
+
+class student extends person {
+    private int score;
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+}
+*/
+
 /*
 public class hello {
     public static void main(String[] args) {
