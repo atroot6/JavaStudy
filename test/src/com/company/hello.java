@@ -20,12 +20,29 @@ public class hello {
     }
 }
 
+ /*   int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println("交换前："+Arrays.toString(a));
+                //将数组中的值倒置
+                int min = 0;
+                int max = a.length - 1;
+                for (int i = 0; min < max; i++) {
+        int temp = 0;
+        temp = a[min];
+        a[min] = a[max];
+        a[max] = temp;
+        min++;
+        max--;
+        }
+        System.out.println("交换后："+Arrays.toString(a));*/
 
-
-
-
-
-
+//数组最大值
+   /* int[] arr = new int[]{1, 2, 3, 4, 5, 1, 6, 9};
+    int max=arr[0];
+        for (int i = 1; i < arr.length ; i++) {
+        if (arr[i]>max){
+        max=arr[i];
+        }
+        }*/
 
 //方法的理解应用
 /*public class hello {
@@ -83,50 +100,9 @@ public class hello {
     }
 }
 
-class person {
-    private String name;
-    private int age;
-    private String sex;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-}
-
-class student extends person {
-    private int score;
-
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-}
-*/
-
-/*
 public class hello {
     public static void main(String[] args) {
         person p = new person();
@@ -140,31 +116,7 @@ public class hello {
     }
 }
 
-class person {
-    private String name;
-
-    public person(String name) {
-        this.name = "有参构造 初始化";
-
-    }
-
-    public person() {
-        this.name = "无参构造 初始化";
-    }
-
-    public void setName(String name) {
-        this.name = name;
-
-    }
-
-    public void setName(String name, String name1) {
-        this.name = new String(name + "  " + name1);
-    }
-
-    public String getName() {
-        return name;
-    }
-}*/
+*/
 
 
 
@@ -176,32 +128,7 @@ public class hello {
         System.out.println(p.getAge());
     }
 }
-
-class person {
-    private String name;
-    private int age;
-
-    public person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-}*/
+*/
 
 /*//对于创建对象的理解
 public class hello {
@@ -219,28 +146,6 @@ public class hello {
     }
 }
 
-// 定义类区域
-class Book {
-    private String name = "";
-    private int number = 0;
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-}*/
 
    /* //冒泡排序算法
     int[] a = {15, 11, 16, 58, 42, 51, 25, 62, 33};
