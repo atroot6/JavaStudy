@@ -1,7 +1,10 @@
 package com.company;
 
 import java.lang.reflect.Array;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 //框架
 /*public class hello {
@@ -15,10 +18,79 @@ import java.util.Scanner;
 public class hello {
     public static void main(String[] args) {
 
-        System.out.println();
         System.out.println("你好 Java");
     }
 }
+
+
+/*//实践ArrayList 的应用
+        ArrayList<String> a = new ArrayList<>();
+        a.add("小红");
+        a.add("小放");
+        a.add("小蓝");
+        boolean b = a.add("小紫");
+        System.out.println("添加小紫success?:  " + b);
+        System.out.println("未删除前："+a.toString());//未删除前
+        boolean c = a.remove("小放");
+        System.out.println("删除小放 success ?  " + c);
+        System.out.println("提取第二个元素为："+a.get(1));//输出第二个元素值,返回值用get
+        System.out.println("集合的大小为：" + a.size());
+        //遍历集合
+        //集合的长度调用方法size();来求得
+        System.out.println("遍历数组如下：");
+        for (int i = 0; i < a.size(); i++) {
+            System.out.println("第"+(i+1)+"号元素为："+a.get(i));
+        }
+        System.out.println(a.toString());*/
+
+
+/*// 实现小游戏猜拳，有结果就退出
+        int a = 0;
+        int b = 0;
+
+        while (a == b) {
+            System.out.println("请输入0-2，分别代表，石头剪刀布：");
+            a = new Random().nextInt(3);
+            a = new Random().nextInt(3);
+            b = new Scanner(System.in).nextInt();
+
+            switch (b) {
+                case 0:
+                    System.out.println("你出石头");
+                    break;
+                case 1:
+                    System.out.println("你出剪刀");
+                    break;
+                case 2:
+                    System.out.println("你出布");
+                    break;
+                default:
+                    System.out.println("输入格式有误！再来！");
+                    continue;
+            }
+            if (a == b) {
+                System.out.println("平局！");
+
+            } else if (a == 0 && b == 1) {
+                System.out.println("你输了！");
+                break;
+            } else if (a == 0 && b == 2) {
+                System.out.println("你赢了！");
+                break;
+            } else if (a == 1 && b == 0) {
+                System.out.println("你赢了");
+                break;
+            } else if (a == 2 && b == 0) {
+                System.out.println("你输了！");
+                break;
+            } else if (a == 1 && b == 2) {
+                System.out.println("你输了");
+                break;
+            }
+
+        }*/
+
+
 
  /*   int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         System.out.println("交换前："+Arrays.toString(a));

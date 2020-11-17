@@ -1,19 +1,22 @@
 package com.company;
-//人类
 class person {
     private String name;
     private int age;
     private String sex;
 
-    public person(String name) {
+    public person(String name, int age, String sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+
+
+    public person() {
         this.name = "有参构造 初始化";
         this.age = 0;
         this.sex = "？";
-
-    }
-
-    public person() {
-        this.name = "无参构造 初始化";
+        System.out.println("姓名："+name+"年龄："+age+"性别："+sex);
     }
 
     public String getName() {
@@ -39,24 +42,4 @@ class person {
     public void setSex(String sex) {
         this.sex = sex;
     }
-}
-//学生类继承人类
-class student extends person {
-    private int score;
-
-    public student() {
-        this.score = 60;
-    }
-
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-}
-//手机类
-class phone {
-
 }
