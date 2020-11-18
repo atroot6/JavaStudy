@@ -13,7 +13,7 @@ class person {
 
 
     public person() {
-        this.name = "有参构造 初始化";
+        this.name = "无参构造 初始化";
         this.age = 0;
         this.sex = "？";
         System.out.println("姓名："+name+"年龄："+age+"性别："+sex);

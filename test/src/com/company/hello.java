@@ -1,11 +1,8 @@
 package com.company;
 
-import java.lang.reflect.Array;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
+
 //框架
 /*public class hello {
     public static void main(String[] args) {
@@ -15,12 +12,138 @@ import java.util.Scanner;
     }
 }*/
 
+
+
+
+
+
+
+
+
+/*
+//用ArrayList作为返回值类型使用的练习：
 public class hello {
     public static void main(String[] args) {
+        ArrayList<Integer> a = new ArrayList<>();
+        for (int i = 0; i < 20; i++) { //添加20个100以内的随机数字到集合里
+            a.add(new Random().nextInt(100) + 1);
+        }
+        System.out.println(evennumber(a));
+        System.out.println();
+        System.out.println("你好 Java");
+    }
 
+    public static ArrayList<Integer> evennumber(ArrayList<Integer> a) {
+        ArrayList<Integer> b = new ArrayList<>();
+        for (int i = 0; i < a.size(); i++) {
+            if (a.get(i) % 2 == 0) {
+                b.add(a.get(i));
+            }
+        }
+
+        return b;
+    }
+
+}
+*/
+
+
+
+
+
+
+
+/*
+//定义一个方法，并用ArrayList 作为方法参数，按特定格式输出遍历
+public class hello {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<>();
+        a.add("小红");
+        a.add("小白");
+        a.add("小黑");
+        a.add("小黄");
+        System.out.println("输出一次基本遍历结果：" + a.toString());
+        printarray(a);
+        System.out.println();
+        System.out.println("你好 Java");
+    }
+
+    public static void printarray(ArrayList<String> a) {
+        System.out.print("结果为：{");
+        for (int i = 0; i < a.size(); i++) {
+            System.out.print(a.get(i));
+            if (a.size() - 1 == i) {
+                System.out.println("}");
+            } else {
+                System.out.print("@");
+            }
+
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+/*
+//定义四个学生对象，添加到集合，并遍历
+public class hello {
+    public static void main(String[] args) {
+        ArrayList<student> s = new ArrayList<>(); //创建一个学生对象类型的集合
+        student a = new student("小红", 20, "女", 66);//创建四个学生对象
+        student b = new student("小黄", 23, "男", 69);
+        student c = new student("小率", 22, "男", 99);
+        student d = new student("小白", 21, "女", 56);
+        s.add(a);
+        s.add(b);
+        s.add(c);
+        s.add(d);
+
+        for (int i = 0; i < 4; i++) {
+            System.out.print("遍历" + (i + 1) + ":");
+            student j = s.get(i);//学生对象创建后放到集合里，遍历时，需要从集合中拿出来，放到学生对象中才能进行遍历，否则输出的是地址值
+            System.out.println("name：" + j.getName() + "  age:" + j.getAge() + "  sex:" + j.getSex() + "  score:" + j.getScore());
+        }
         System.out.println("你好 Java");
     }
 }
+*/
+
+
+//生成6个随机值（1-33），并放入集合中，并遍历集合。
+/*public class hello {
+    public static void main(String[] args) {
+        ArrayList<Integer> a = new ArrayList();
+        for (int i = 0; i < 6; i++) {
+            a.add(new renumber().getA());
+        }
+
+        System.out.println(a.toString());
+        System.out.println(a);
+        System.out.println("数组中第三个元素为：" + a.get(2));
+        System.out.println("你好 Java");
+    }
+}
+
+class renumber {
+
+    private int a = new Random().nextInt(33) + 1;
+
+    public renumber() {
+    }
+
+    public renumber(int a) {
+        this.a = a;
+    }
+
+    public int getA() {
+        return a;
+    }
+}*/
 
 
 /*//实践ArrayList 的应用
