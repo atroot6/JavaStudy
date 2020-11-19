@@ -8,10 +8,67 @@ import java.util.Random;
     public static void main(String[] args) {
 
         System.out.println();
-        System.out.println("你好 Java");
+        System.out.println("\n你好 Java");
     }
 }*/
 
+/*
+//String中与获取相关常用的方法
+public class hello {
+    public static void main(String[] args) {
+        //计算字符数
+        int a = "qwertyuiop".length();
+        System.out.println("有几个字符？  " + a);
+        //拼接字符串,当然了 也可以使用 + 直接连接两个字符串
+        String s1 = "hello";
+        String s2 = "world";
+        String s3 = s1.concat(s2);
+        System.out.println(s1 + "," + s2 + "," + s3);
+        //获取指定索引（从0开始）位置的字符
+        char ch1 = s1.charAt(2);
+        char ch2 = s2.charAt(1);
+        System.out.println("hello中的第3个字符：" + ch1 + "" + "\n" + "world中的第一个字符：" + ch2);
+        //查询某字符在字符串中的位置，若没有，则返回-1值
+        String s4 = "ufgauogafhohfhaifhhip";
+        int f = s4.indexOf("fh");
+        int x = s4.indexOf("x");
+        System.out.println("查找：fh第一次出现的位置"+f);
+        System.out.println("查找：x 第一次出现的位置"+x);
+        System.out.println("\n你好 Java");
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+public class hello {
+    public static void main(String[] args) {
+        String s1 = "hello";
+        String s2 = null;
+        System.out.println(s1.equals("hello"));
+        System.out.println("hello".equals(s1));
+        System.out.println(s1.equals(s2));
+        System.out.println(s2.equals(s1)); //编译错误,空指针异常
+        System.out.println();//在编程中同时拥有常量和变量时要避免将变量放在前面
+        System.out.println("你好 Java");
+
+    }
+}
+
+*/
 
 
 
