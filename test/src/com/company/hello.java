@@ -1,7 +1,10 @@
 package com.company;
 
+import javax.xml.crypto.dsig.keyinfo.KeyName;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 //框架
 /*public class hello {
@@ -11,6 +14,218 @@ import java.util.Random;
         System.out.println("\n你好 Java");
     }
 }*/
+
+
+public class hello {
+    public static void main(String[] args) {
+        newphone newphone = new newphone();
+        newphone.call();
+        newphone.send();
+        newphone.show();
+        System.out.println();
+        System.out.println("\n你好 Java");
+    }
+}
+
+
+
+
+/*
+public class hello {
+    public static void main(String[] args) {
+        double a = -10.8;
+        double b = 5.9;
+        int count=0;
+        for (int i = (int) Math.ceil(a); i < (int) Math.ceil(b); i++) {
+            int s = Math.abs(i);
+            if (s>6||s<2.1){
+                count++;
+                System.out.print(i+"  ");
+            }
+        }
+        System.out.println("共有："+count+"个");
+        System.out.println("\n你好 Java");
+    }
+}
+*/
+
+
+
+
+
+
+/*
+public class hello {
+    public static void main(String[] args) {
+        test t = new test();
+        test s = new test();
+        System.out.println();
+        System.out.println("\n你好 Java");
+    }
+
+}
+
+class test {
+    public test() {
+        System.out.println("构造方法执行");
+    }
+
+    static {
+        System.out.println("静态代码块执行");
+    }
+}
+*/
+
+
+
+
+
+/*
+//static关键字的运用
+public class hello {
+    public static void main(String[] args) {
+        example e1 = new example("小黄", 20);
+        System.out.println("姓名：" + e1.getName() + "\n年龄：" + e1.getAge() + "\n学号：" + e1.getSid());
+        example e2 = new example("小白", 22);
+        System.out.println("\n姓名：" + e2.getName() + "\n年龄：" + e2.getAge() + "\n学号：" + e2.getSid());
+        example e3 = new example();
+        e3.setName("小红");
+        e3.setAge(21);
+        System.out.println("\n姓名：" + e3.getName() + "\n年龄：" + e3.getAge() + "\n学号：" + e3.getSid());
+        e3.setSid(5);
+        System.out.println("\n姓名：" + e3.getName() + "\n年龄：" + e3.getAge() + "\n学号：" + e3.getSid());
+        System.out.println();
+        System.out.println("\n你好 Java");
+    }
+}
+
+class example {
+    private String name;
+    private int age;
+    private static int Sid;
+
+    public example() {
+        this.Sid = ++Sid; //无参构造，学号+1，实现自动编入学号功能
+    }
+
+    public example(String name, int age) {
+        this.name = name;
+        this.age = age;
+        this.Sid = ++Sid; //全参构造，学号+1，实现自动编入学号功能
+    }
+
+    public static int getSid() {
+        return Sid;
+    }
+
+    public static void setSid(int sid) {
+        Sid = sid;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+}
+*/
+
+
+
+
+/*
+//统计输入的字符串中各种类型字符的出现次数
+public class hello {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入要判定的字符串：");
+        String scanner1 = scanner.next();
+
+        int a = 0;//小写字符
+        int b = 0;//大写字符
+        int c = 0;//数字字符
+        int d = 0;//特殊字符
+
+        //先进行分割其成为字符数组 chars
+        char[] chars = scanner1.toCharArray();
+        //判断chars 数组中的元素
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] >= 'a' && chars[i] <= 'z') {
+                a++;
+            } else if (chars[i] >= 'A' && chars[i] <= 'Z') {
+                b++;
+            } else if (chars[i] >= '0' && chars[i] <= '9') {
+                c++;
+            } else {
+                d++;
+            }
+        }
+        System.out.println("小写字母的个数为：" + a);
+        System.out.println("大写字母的个数为：" + b);
+        System.out.println("数字字符的个数为：" + c);
+        System.out.println("特殊字符的个数为：" + d);
+        System.out.println("\n你好 Java");
+    }
+}
+*/
+
+
+//String中 与转换有关的方法
+/*
+public class hello {
+    public static void main(String[] args) {
+//将字符串拆分成 单个字符 存入chars 数组
+        char[] chars = "Hello".toCharArray();
+        System.out.println(chars[0]);
+        System.out.println(chars.length);//5
+//转换成为字节数组
+        byte[] bytes = "Qwert".getBytes();
+        System.out.println(bytes[0]);
+//替换字符串中的内容
+        String s1 = "hhhhhh,哈哈哈呵呵呵";
+        String replace1 = s1.replace("哈", "呵");
+        System.out.println("替换前：" + s1);
+        System.out.println("替换后：" + replace1);
+        String replace2 = s1.replace("h", "哈");
+        System.out.println("替换前：" + s1);
+        System.out.println("替换后：" + replace2);
+//切割字符串
+        String[] split1 = s1.split(",");
+        System.out.println("切割后" + Arrays.toString(split1));
+//特别注意，如果以“.” 作为切割标记，那么需要写成 //.
+        System.out.println();
+        System.out.println("\n你好 Java");
+    }
+}
+*/
+
+
+//截取复制其中一部分字符串 substring()方法
+/*public class hello {
+    public static void main(String[] args) {
+        String s1 = "HelloWorld";
+        String s2 =s1.substring(s1.indexOf("W"));
+        System.out.println(s2);
+        s2 = s1.substring(s1.indexOf("e"),s1.indexOf("oW")+1); //左闭右开区间
+        System.out.println(s2);  //此时，开辟了新的内存空间存放新的字符串
+        System.out.println("\n你好 Java");
+    }
+}*/
+
+
+
+
 
 /*
 //String中与获取相关常用的方法
@@ -38,14 +253,6 @@ public class hello {
     }
 }
 */
-
-
-
-
-
-
-
-
 
 
 
