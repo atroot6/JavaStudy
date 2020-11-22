@@ -18,10 +18,17 @@ import java.util.Scanner;
 
 public class hello {
     public static void main(String[] args) {
-        newphone newphone = new newphone();
-        newphone.call();
-        newphone.send();
-        newphone.show();
+        Cat cat = new Cat("猫");
+        System.out.println(cat.animal);
+        cat.eat();
+        cat.showvoice();
+
+        System.out.println("========");
+
+        Dog dog = new Dog("狗");
+        System.out.println(dog.animal);
+        dog.eat();
+        dog.showvoice();
         System.out.println();
         System.out.println("\n你好 Java");
     }
