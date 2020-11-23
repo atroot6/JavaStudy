@@ -23,7 +23,7 @@ public class hello {
         cat.eat();
         cat.showvoice();
 
-        System.out.println("========");
+        
 
         Dog dog = new Dog("狗");
         System.out.println(dog.animal);
