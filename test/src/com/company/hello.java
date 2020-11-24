@@ -1,11 +1,5 @@
 package com.company;
 
-import javax.xml.crypto.dsig.keyinfo.KeyName;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
-
 //框架
 /*public class hello {
     public static void main(String[] args) {
@@ -16,15 +10,36 @@ import java.util.Scanner;
 }*/
 
 
+
 public class hello {
     public static void main(String[] args) {
-        haha ha =new haha();
-        ha.show();
-        ha.add();
+        Animal cat =new Cat(); //多态的代码体现形式
+        // 左侧父类的引用指向了右侧子类的对象
+        cat.show();
+//        System.out.println(cat.num);//会直接调用等号左边父类当中的成员变量num=19
+        System.out.println("\n你好 Java");
+    }
+}
+
+
+
+
+
+
+
+
+/*
+public class hello {
+    public static void main(String[] args) {
+        haha haha=new haha();
+        haha.MyInterfaceDefault();
+        haha.showNum();
+        haha.show();
         System.out.println();
         System.out.println("\n你好 Java");
     }
 }
+*/
 
 
 
