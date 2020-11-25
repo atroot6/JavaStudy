@@ -17,9 +17,9 @@ public class Cat extends Animal {
     @Override
     public void eat() {
         System.out.println("猫吃鱼！");
-    }
+    } //重写构造方法eat（）
 
-    @Override
+
     public void showvoice() {
         System.out.println("喵喵喵！");
     }

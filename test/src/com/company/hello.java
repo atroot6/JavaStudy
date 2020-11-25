@@ -13,19 +13,70 @@ package com.company;
 
 public class hello {
     public static void main(String[] args) {
-        Animal cat =new Cat(); //多态的代码体现形式
-        // 左侧父类的引用指向了右侧子类的对象
-        cat.show();
-//        System.out.println(cat.num);//会直接调用等号左边父类当中的成员变量num=19
+            
+        System.out.println();
         System.out.println("\n你好 Java");
     }
 }
 
 
 
+/*
+
+public class hello {
+    public static void main(String[] args) {
+        Animal animal = new Cat();//向上转型 猫转为动物 小转大，其子类的特有方法将无法调用
+
+        if (animal instanceof Dog) {
+            Dog gou = (Dog) animal;
+            gou.showvoice();
+            gou.eat();
+        }
+        if (animal instanceof Cat) {
+            Cat mao = (Cat) animal;
+            mao.showvoice();
+            mao.eat();
+        }
+//        Cat mao = (Cat) animal; //向下转型语句
+//        mao.showvoice();// 若不写 那么就会编译报错
+//        Animal dog = new Dog();
+//        dog.eat();
+//        Dog gou = (Dog) dog;
+//        gou.showvoice();
+
+        System.out.println();
+        System.out.println("\n你好 Java");
+    }
+}
+
+*/
+
+
+/*
+public class hello {
+    public static void main(String[] args) {
+        Animal animal = new Cat();//向上转型 猫转为动物 小转大，其子类的特有方法将无法调用
+        animal.eat(); //调用其抽象方法
+        Cat mao = (Cat) animal; //向下转型语句
+        mao.showvoice();// 若不写 那么就会编译报错
+        Animal dog = new Dog();
+        dog.eat();
+        Dog gou = (Dog) dog;
+        gou.showvoice();
+
+        System.out.println();
+        System.out.println("\n你好 Java");
+    }
+}
+*/
 
 
 
+
+/* Animal cat =new Cat(); //多态的代码体现形式
+        // 左侧父类的引用指向了右侧子类的对象
+        cat.show();
+//        System.out.println(cat.num);//会直接调用等号左边父类当中的成员变量num=19*/
 
 
 /*

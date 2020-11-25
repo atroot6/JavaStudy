@@ -10,10 +10,10 @@ public class Dog extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("吃骨头");
+        System.out.println("狗吃shi");
     }
 
-    @Override
+    /*@Override*/
     public void showvoice() {
         System.out.println("汪汪汪！");
     }
