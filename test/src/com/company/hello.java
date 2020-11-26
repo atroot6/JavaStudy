@@ -10,14 +10,23 @@ package com.company;
 }*/
 
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class hello {
     public static void main(String[] args) {
-            
-        System.out.println();
+
+
+
         System.out.println("\n你好 Java");
     }
+
 }
+
+
+
+
 
 
 
