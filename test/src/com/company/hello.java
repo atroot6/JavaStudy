@@ -14,9 +14,30 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
+
+
+
+
+
+
+
+
+/*
+
+//匿名内部类的使用
+// 定义方法  接口名 对象名 = new 接口名(){  @override  覆写所有抽象方法！  }；
+//匿名内部类使用的时候，可以不用写实现类，直接对接口进行实例化，但是只能使用一次
+//若要多次使用 需写接口实现类
 public class hello {
     public static void main(String[] args) {
-
+        MyInterface myInterface = new MyInterface(){ //
+            @Override
+            public void show() {
+                System.out.println("匿名内部类调用成功！！！");
+            }
+        };
+        myInterface.show();
 
 
         System.out.println("\n你好 Java");
@@ -24,6 +45,8 @@ public class hello {
 
 }
 
+
+*/
 
 
 

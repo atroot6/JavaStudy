@@ -27,9 +27,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="11-25 第一次提交">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="12.6 第一次提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/JavaStudy/com/company/hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/com/ChatAtTCP/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/ChatAtTCP/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/com/ChatAtTCP/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/ChatAtTCP/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/com/company/haha.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/com/company/haha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/com/company/hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/com/company/hello.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +65,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.hello">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ChatAtTCP.Client" />
+      <option name="MAIN_CLASS_NAME" value="ChatAtTCP.Client" />
       <module name="JavaStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ChatAtTCP.*" />
+          <option name="PATTERN" value="ChatAtTCP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,11 +95,11 @@
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ChatAtTCP.Server" />
+      <option name="MAIN_CLASS_NAME" value="ChatAtTCP.Server" />
       <module name="JavaStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ChatAtTCP.*" />
+          <option name="PATTERN" value="ChatAtTCP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,23 +133,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.hello" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.hello" />
         <item itemvalue="Application.RunIt" />
       </list>
     </recent_temporary>
@@ -172,7 +178,8 @@
       <workItem from="1606377500638" duration="616000" />
       <workItem from="1606392598001" duration="4831000" />
       <workItem from="1607245479164" duration="37000" />
-      <workItem from="1607245566971" duration="3215000" />
+      <workItem from="1607245566971" duration="3374000" />
+      <workItem from="1607345741429" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="hahaha">
       <created>1606052457320</created>
@@ -223,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606310892924</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="12.6 第一次提交">
+      <created>1607248921108</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607248921108</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,40 +261,46 @@
     <MESSAGE value="11-23 第一次提交" />
     <MESSAGE value="11-24 第一次提交" />
     <MESSAGE value="11-25 第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="11-25 第一次提交" />
+    <MESSAGE value="12.6 第一次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.6 第一次提交" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="723" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1606395830115">
-      <screen x="0" y="0" width="1862" height="1007" />
+    <state x="578" y="317" key="#Notifications" timestamp="1607345769148">
+      <screen x="0" y="0" width="1707" height="960" />
     </state>
+    <state x="578" y="317" key="#Notifications/0.0.1707.960@0.0.1707.960" timestamp="1607345769148" />
+    <state x="663" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1607346165792">
+      <screen x="0" y="0" width="1707" height="960" />
+    </state>
+    <state x="663" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1707.960@0.0.1707.960" timestamp="1607346165792" />
     <state x="723" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1862.1007/1920.-12.1862.1007@0.0.1862.1007" timestamp="1606395830115" />
     <state x="723" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1862.1007@0.0.1862.1007" timestamp="1606300057438" />
     <state x="672" y="265" key="FileChooserDialogImpl" timestamp="1606052374174">
       <screen x="0" y="0" width="1862" height="1007" />
     </state>
     <state x="672" y="265" key="FileChooserDialogImpl/0.0.1862.1007@0.0.1862.1007" timestamp="1606052374174" />
-    <state width="1340" height="239" key="GridCell.Tab.0.bottom" timestamp="1607248602896">
+    <state width="1340" height="239" key="GridCell.Tab.0.bottom" timestamp="1607346362468">
       <screen x="0" y="0" width="1707" height="960" />
     </state>
-    <state width="1340" height="239" key="GridCell.Tab.0.bottom/0.0.1707.960@0.0.1707.960" timestamp="1607248602896" />
+    <state width="1340" height="239" key="GridCell.Tab.0.bottom/0.0.1707.960@0.0.1707.960" timestamp="1607346362468" />
     <state width="1504" height="250" key="GridCell.Tab.0.bottom/0.0.1862.1007/1920.-12.1862.1007@0.0.1862.1007" timestamp="1606396828137" />
     <state width="1502" height="250" key="GridCell.Tab.0.bottom/0.0.1862.1007@0.0.1862.1007" timestamp="1606376969229" />
-    <state width="1340" height="239" key="GridCell.Tab.0.center" timestamp="1607248602896">
+    <state width="1340" height="239" key="GridCell.Tab.0.center" timestamp="1607346362468">
       <screen x="0" y="0" width="1707" height="960" />
     </state>
-    <state width="1340" height="239" key="GridCell.Tab.0.center/0.0.1707.960@0.0.1707.960" timestamp="1607248602896" />
+    <state width="1340" height="239" key="GridCell.Tab.0.center/0.0.1707.960@0.0.1707.960" timestamp="1607346362468" />
     <state width="1504" height="250" key="GridCell.Tab.0.center/0.0.1862.1007/1920.-12.1862.1007@0.0.1862.1007" timestamp="1606396828136" />
     <state width="1502" height="250" key="GridCell.Tab.0.center/0.0.1862.1007@0.0.1862.1007" timestamp="1606376969229" />
-    <state width="1340" height="239" key="GridCell.Tab.0.left" timestamp="1607248602896">
+    <state width="1340" height="239" key="GridCell.Tab.0.left" timestamp="1607346362467">
       <screen x="0" y="0" width="1707" height="960" />
     </state>
-    <state width="1340" height="239" key="GridCell.Tab.0.left/0.0.1707.960@0.0.1707.960" timestamp="1607248602896" />
+    <state width="1340" height="239" key="GridCell.Tab.0.left/0.0.1707.960@0.0.1707.960" timestamp="1607346362467" />
     <state width="1504" height="250" key="GridCell.Tab.0.left/0.0.1862.1007/1920.-12.1862.1007@0.0.1862.1007" timestamp="1606396828136" />
     <state width="1502" height="250" key="GridCell.Tab.0.left/0.0.1862.1007@0.0.1862.1007" timestamp="1606376969229" />
-    <state width="1340" height="239" key="GridCell.Tab.0.right" timestamp="1607248602896">
+    <state width="1340" height="239" key="GridCell.Tab.0.right" timestamp="1607346362468">
       <screen x="0" y="0" width="1707" height="960" />
     </state>
-    <state width="1340" height="239" key="GridCell.Tab.0.right/0.0.1707.960@0.0.1707.960" timestamp="1607248602896" />
+    <state width="1340" height="239" key="GridCell.Tab.0.right/0.0.1707.960@0.0.1707.960" timestamp="1607346362468" />
     <state width="1504" height="250" key="GridCell.Tab.0.right/0.0.1862.1007/1920.-12.1862.1007@0.0.1862.1007" timestamp="1606396828137" />
     <state width="1502" height="250" key="GridCell.Tab.0.right/0.0.1862.1007@0.0.1862.1007" timestamp="1606376969229" />
     <state width="1496" height="312" key="GridCell.Tab.1.bottom" timestamp="1606311361153">
@@ -299,14 +319,16 @@
       <screen x="0" y="0" width="1862" height="1007" />
     </state>
     <state width="1496" height="312" key="GridCell.Tab.1.right/0.0.1862.1007@0.0.1862.1007" timestamp="1606311361153" />
-    <state x="625" y="170" key="SettingsEditor" timestamp="1606395789869">
-      <screen x="0" y="0" width="1862" height="1007" />
+    <state x="390" y="113" key="SettingsEditor" timestamp="1607345820936">
+      <screen x="0" y="0" width="1707" height="960" />
     </state>
+    <state x="390" y="113" key="SettingsEditor/0.0.1707.960@0.0.1707.960" timestamp="1607345820936" />
     <state x="625" y="170" key="SettingsEditor/0.0.1862.1007/1920.-12.1862.1007@0.0.1862.1007" timestamp="1606395789869" />
     <state x="393" y="156" key="SettingsEditor/0.0.1862.1007@0.0.1862.1007" timestamp="1606313882995" />
-    <state x="484" y="244" key="Vcs.Push.Dialog.v2" timestamp="1606310897864">
-      <screen x="0" y="0" width="1862" height="1007" />
+    <state x="444" y="233" key="Vcs.Push.Dialog.v2" timestamp="1607248927257">
+      <screen x="0" y="0" width="1707" height="960" />
     </state>
+    <state x="444" y="233" key="Vcs.Push.Dialog.v2/0.0.1707.960@0.0.1707.960" timestamp="1607248927257" />
     <state x="484" y="244" key="Vcs.Push.Dialog.v2/0.0.1862.1007@0.0.1862.1007" timestamp="1606310897864" />
     <state x="640" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607247313893">
       <screen x="0" y="0" width="1707" height="960" />

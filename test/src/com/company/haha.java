@@ -8,8 +8,4 @@ public class haha implements MyInterface {
     }
 
 
-
-
-
-
 }
