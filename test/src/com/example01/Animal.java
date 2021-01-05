@@ -1,4 +1,4 @@
-package com.company;
+package com.example01;
 
 public abstract class Animal { //定义一个抽象类
     String  animal;

@@ -1,4 +1,4 @@
-package com.company;
+package com.example01;
 
 public interface MyInterface {
     public abstract void show();

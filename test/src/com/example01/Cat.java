@@ -1,4 +1,4 @@
-package com.company;
+package com.example01;
 
 public class Cat extends Animal {
    int num=200;

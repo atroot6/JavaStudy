@@ -1,4 +1,4 @@
-package com.company;
+package com.example01;
 
 public class Dog extends Animal {
     public Dog(String animal) {  //构造方法
