@@ -1,4 +1,4 @@
-package RedPacket;
+package RedPacket.Old;
 
 import java.util.ArrayList;
 import java.util.Random;
