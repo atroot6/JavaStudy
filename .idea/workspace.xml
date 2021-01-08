@@ -27,21 +27,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.5 第二次提交 学习了外部类\成员内部类和局部内部类的基本定义以及调用方法.">
+    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.6 第一次提交 完成了内部类\局部内部类\匿名内部类的学习,掌握了其基本用法,以及实现场景. &#10;红包案例做了一部分,还有手气红包待完成.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/Dog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/hello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/newphone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/phone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/com/company/student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/RedPacket/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/RedPacket/Old/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/RedPacket/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/RedPacket/Old/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/RedPacket/Rush.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/RedPacket/Old/Rush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/RedPacket/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/RedPacket/Old/user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/com/example01/Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/com/example01/Body.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/RedPacket/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/RedPacket/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/RedPacket/Rush.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/RedPacket/user.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/RedPacket/New/RandomMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/RedPacket/New/RandomMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/RedPacket/New/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/RedPacket/New/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +69,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="Application.Demo01">
     <configuration name="Body" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example01.Body" />
       <module name="JavaStudy" />
@@ -90,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ChatAtTCP.Client" />
+    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day01.Demo01" />
       <module name="JavaStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ChatAtTCP.*" />
+          <option name="PATTERN" value="Day01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo01" />
         <item itemvalue="Application.Start" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Body" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +188,9 @@
       <workItem from="1609910270810" duration="788000" />
       <workItem from="1609911928835" duration="21000" />
       <workItem from="1609912296963" duration="8347000" />
-      <workItem from="1609934976790" duration="7258000" />
+      <workItem from="1609934976790" duration="7648000" />
+      <workItem from="1610098641858" duration="8236000" />
+      <workItem from="1610113604667" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary="hahaha">
       <created>1606052457320</created>
@@ -281,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609857186938</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2021.1.6 第一次提交 完成了内部类\局部内部类\匿名内部类的学习,掌握了其基本用法,以及实现场景. &#10;红包案例做了一部分,还有手气红包待完成.">
+      <created>1609942548877</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609942548877</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +312,17 @@
     <MESSAGE value="12.7 第二次提交" />
     <MESSAGE value="2021.1.5 第一次提交 学习了外部类\成员内部类和局部内部类的基本定义以及调用方法." />
     <MESSAGE value="2021.1.5 第二次提交 学习了外部类\成员内部类和局部内部类的基本定义以及调用方法." />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.1.5 第二次提交 学习了外部类\成员内部类和局部内部类的基本定义以及调用方法." />
+    <MESSAGE value="2021.1.6 第一次提交 完成了内部类\局部内部类\匿名内部类的学习,掌握了其基本用法,以及实现场景. &#10;红包案例做了一部分,还有手气红包待完成." />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.1.6 第一次提交 完成了内部类\局部内部类\匿名内部类的学习,掌握了其基本用法,以及实现场景. &#10;红包案例做了一部分,还有手气红包待完成." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -9,8 +9,8 @@ import java.util.ArrayList;
  */
 public class Start {
     public static void main(String[] args) {
-        normalMode normalMode = new normalMode();
-        ArrayList<Integer> mode = normalMode.Mode(20, 6);
+        RandomMode randomMode = new RandomMode();
+        ArrayList<Integer> mode = randomMode.Mode(20, 6);
         System.out.println(mode.toString());
 
     }
