@@ -1,16 +1,26 @@
 package Day01;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private int age;
 
-    @Override
-    public boolean equals(Object obj) {
-        //使用向下转型 将obj转换
-        Person P = (Person) obj;  //向下强转
-        boolean b = this.name.equals(P.name) && this.age == age;
-        return b;
+
+//    此处重写equals方法 目的是达到比较对象里的内容->属性值
+@Override
+public boolean equals(Object o) {
+    if (this == o) return true; //提高效率
+    if (o == null || getClass() != o.getClass()) return false;  //反射  提高效率
+    Person person = (Person) o; //向下强转型
+    return age == person.age && Objects.equals(name, person.name); //进行比较 并返回布尔值
+}
+
+    @Override   //必须要有的部分 日后作解释 2021.1.9
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
+
     public Person() {
     }
 

@@ -27,14 +27,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.6 第一次提交 完成了内部类\局部内部类\匿名内部类的学习,掌握了其基本用法,以及实现场景. &#10;红包案例做了一部分,还有手气红包待完成.">
+    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.8 第一次提交 完善了红包案例中的new部分&#10;并且 开始了object类中equals的学习">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/RedPacket/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/RedPacket/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/RedPacket/Rush.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaStudy/RedPacket/user.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/RedPacket/New/RandomMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/RedPacket/New/RandomMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/RedPacket/New/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/RedPacket/New/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Day01/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Day01/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Day01/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Day01/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,15 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,7 +184,8 @@
       <workItem from="1609912296963" duration="8347000" />
       <workItem from="1609934976790" duration="7648000" />
       <workItem from="1610098641858" duration="8236000" />
-      <workItem from="1610113604667" duration="2339000" />
+      <workItem from="1610113604667" duration="2528000" />
+      <workItem from="1610194756830" duration="8959000" />
     </task>
     <task id="LOCAL-00001" summary="hahaha">
       <created>1606052457320</created>
@@ -283,7 +278,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609942548877</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="2021.1.8 第一次提交 完善了红包案例中的new部分&#10;并且 开始了object类中equals的学习">
+      <created>1610116100248</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610116100248</updated>
+    </task>
+    <task id="LOCAL-00015" summary="2021.1.8 第一次提交 完善了红包案例中的new部分&#10;并且 开始了object类中equals的学习">
+      <created>1610116117509</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610116117509</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +322,8 @@
     <MESSAGE value="2021.1.5 第一次提交 学习了外部类\成员内部类和局部内部类的基本定义以及调用方法." />
     <MESSAGE value="2021.1.5 第二次提交 学习了外部类\成员内部类和局部内部类的基本定义以及调用方法." />
     <MESSAGE value="2021.1.6 第一次提交 完成了内部类\局部内部类\匿名内部类的学习,掌握了其基本用法,以及实现场景. &#10;红包案例做了一部分,还有手气红包待完成." />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.1.6 第一次提交 完成了内部类\局部内部类\匿名内部类的学习,掌握了其基本用法,以及实现场景. &#10;红包案例做了一部分,还有手气红包待完成." />
+    <MESSAGE value="2021.1.8 第一次提交 完善了红包案例中的new部分&#10;并且 开始了object类中equals的学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.1.8 第一次提交 完善了红包案例中的new部分&#10;并且 开始了object类中equals的学习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
