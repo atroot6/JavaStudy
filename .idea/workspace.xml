@@ -27,9 +27,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.9 第一次提交 完成了equals方法的学习 &#10;掌握了 equals 与 == 的区别以及重写equals的作用&#10;进入了 Date 类的学习">
+    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.10 第一次提交-&gt; 学习了Date类 \ DateFormat类\ Calendar类 \System类\StringBuilder类的学习使用">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/Day02/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Day02/Demo01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,17 +132,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Demo03" />
@@ -189,7 +177,7 @@
       <workItem from="1610113604667" duration="2528000" />
       <workItem from="1610194756830" duration="9452000" />
       <workItem from="1610249907578" duration="2601000" />
-      <workItem from="1610257064397" duration="16758000" />
+      <workItem from="1610257064397" duration="17247000" />
     </task>
     <task id="LOCAL-00001" summary="hahaha">
       <created>1606052457320</created>
@@ -303,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610203868312</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="2021.1.10 第一次提交-&gt; 学习了Date类 \ DateFormat类\ Calendar类 \System类\StringBuilder类的学习使用">
+      <created>1610286975351</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610286975352</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +330,8 @@
     <MESSAGE value="2021.1.6 第一次提交 完成了内部类\局部内部类\匿名内部类的学习,掌握了其基本用法,以及实现场景. &#10;红包案例做了一部分,还有手气红包待完成." />
     <MESSAGE value="2021.1.8 第一次提交 完善了红包案例中的new部分&#10;并且 开始了object类中equals的学习" />
     <MESSAGE value="2021.1.9 第一次提交 完成了equals方法的学习 &#10;掌握了 equals 与 == 的区别以及重写equals的作用&#10;进入了 Date 类的学习" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.1.9 第一次提交 完成了equals方法的学习 &#10;掌握了 equals 与 == 的区别以及重写equals的作用&#10;进入了 Date 类的学习" />
+    <MESSAGE value="2021.1.10 第一次提交-&gt; 学习了Date类 \ DateFormat类\ Calendar类 \System类\StringBuilder类的学习使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.1.10 第一次提交-&gt; 学习了Date类 \ DateFormat类\ Calendar类 \System类\StringBuilder类的学习使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
