@@ -12,12 +12,11 @@ public class Demo02 {
         int[] a = new int[6];
         for (int i = 0; i < a.length; i++) {
             a[i] = new Random().nextInt(30) + 1;
+            for (int j = 0; j < i; j++) { //控制比较
 
-            for (int j=0;j<i;j++){ //控制比较
-
-                while (a[j]==a[i]){  //比较 若相通则重新生成
+                while (a[j] == a[i]) {  //比较 若相通则重新生成
                     a[i] = new Random().nextInt(30) + 1;
-                    j=0; //从头比较
+                    j = 0; //从头比较
                 }
 
             }
