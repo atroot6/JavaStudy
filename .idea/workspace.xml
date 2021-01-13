@@ -27,9 +27,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.11  查漏补缺 复习javaSE部分的基础知识&#10; 练习了杨辉三角问题\数组问题等">
+    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.12  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/Day04/Demo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Day04/Demo02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,9 +72,9 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
   </component>
-  <component name="RunManager" selected="Application.Demo03">
+  <component name="RunManager" selected="Application.Demo03 (1)">
     <configuration name="Demo01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day05.Demo01" />
       <module name="JavaStudy" />
@@ -89,25 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day04.Demo01" />
+    <configuration name="Demo02 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day06.Demo02" />
       <module name="JavaStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo02 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day04.Demo02" />
-      <module name="JavaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Day04.*" />
+          <option name="PATTERN" value="Day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,6 +107,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Day05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo03 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day06.Demo03" />
+      <module name="JavaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo03 (1)" />
+        <item itemvalue="Application.Demo02 (2)" />
         <item itemvalue="Application.Demo03" />
         <item itemvalue="Application.Demo02" />
         <item itemvalue="Application.Demo01 (1)" />
-        <item itemvalue="Application.Demo02 (1)" />
-        <item itemvalue="Application.Demo01" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +200,9 @@
       <workItem from="1610287119970" duration="364000" />
       <workItem from="1610356351576" duration="17828000" />
       <workItem from="1610419867498" duration="6061000" />
-      <workItem from="1610448595678" duration="7780000" />
+      <workItem from="1610448595678" duration="7896000" />
+      <workItem from="1610508041664" duration="1453000" />
+      <workItem from="1610541457451" duration="9464000" />
     </task>
     <task id="LOCAL-00001" summary="hahaha">
       <created>1606052457320</created>
@@ -336,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610378999516</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2021.1.12  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习">
+      <created>1610465228424</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610465228424</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +378,9 @@
     <MESSAGE value="2021.1.9 第一次提交 完成了equals方法的学习 &#10;掌握了 equals 与 == 的区别以及重写equals的作用&#10;进入了 Date 类的学习" />
     <MESSAGE value="2021.1.10 第一次提交-&gt; 学习了Date类 \ DateFormat类\ Calendar类 \System类\StringBuilder类的学习使用" />
     <MESSAGE value="2021.1.11  查漏补缺 复习javaSE部分的基础知识&#10; 练习了杨辉三角问题\数组问题等" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.1.11  查漏补缺 复习javaSE部分的基础知识&#10; 练习了杨辉三角问题\数组问题等" />
+    <MESSAGE value="2021.1.11  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习" />
+    <MESSAGE value="2021.1.12  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.1.12  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
