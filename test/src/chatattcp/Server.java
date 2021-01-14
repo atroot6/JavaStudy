@@ -1,4 +1,4 @@
-package ChatAtTCP;
+package chatattcp;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

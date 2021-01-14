@@ -1,4 +1,4 @@
-package ChatAtTCP;
+package chatattcp;
 
 import java.io.OutputStream;
 import java.net.InetAddress;

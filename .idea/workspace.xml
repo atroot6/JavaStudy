@@ -27,8 +27,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.12  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习">
+    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.13  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习&#10; 对传值复习 以及补充了一些题目设计到的基础知识">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/ChatAtTCP/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/chatattcp/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/ChatAtTCP/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/chatattcp/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Day06/Demo03.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Day06/Demo03.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +72,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Demo03 (1)">
-    <configuration name="Demo01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day05.Demo01" />
+  <component name="RunManager" selected="Application.Demo01">
+    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day07.Demo01" />
       <module name="JavaStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day05.*" />
+          <option name="PATTERN" value="Day07.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo01" />
         <item itemvalue="Application.Demo03 (1)" />
         <item itemvalue="Application.Demo02 (2)" />
         <item itemvalue="Application.Demo03" />
         <item itemvalue="Application.Demo02" />
-        <item itemvalue="Application.Demo01 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +206,9 @@
       <workItem from="1610419867498" duration="6061000" />
       <workItem from="1610448595678" duration="7896000" />
       <workItem from="1610508041664" duration="1453000" />
-      <workItem from="1610541457451" duration="9464000" />
+      <workItem from="1610541457451" duration="9584000" />
+      <workItem from="1610595912431" duration="14628000" />
+      <workItem from="1610632389219" duration="1777000" />
     </task>
     <task id="LOCAL-00001" summary="hahaha">
       <created>1606052457320</created>
@@ -344,7 +350,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610465228424</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="2021.1.13  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习&#10; 对传值复习 以及补充了一些题目设计到的基础知识">
+      <created>1610552800001</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1610552800001</updated>
+    </task>
+    <task id="LOCAL-00022" summary="2021.1.13  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习&#10; 对传值复习 以及补充了一些题目设计到的基础知识">
+      <created>1610552809075</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610552809075</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +400,8 @@
     <MESSAGE value="2021.1.11  查漏补缺 复习javaSE部分的基础知识&#10; 练习了杨辉三角问题\数组问题等" />
     <MESSAGE value="2021.1.11  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习" />
     <MESSAGE value="2021.1.12  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.1.12  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习" />
+    <MESSAGE value="2021.1.13  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习&#10; 对传值复习 以及补充了一些题目设计到的基础知识" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.1.13  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习&#10; 对传值复习 以及补充了一些题目设计到的基础知识" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
