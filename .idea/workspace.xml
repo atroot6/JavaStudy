@@ -27,11 +27,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.13  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习&#10; 对传值复习 以及补充了一些题目设计到的基础知识">
+    <list default="true" id="a32e6c61-2e8f-4cd1-9c65-c105ba58284d" name="Default Changelist" comment="2021.1.14  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习(中)&#10; 对面向对象复习 复习了封装性\构造器\关键字等功能&#10; 对MVC模式有了一个简单的了解 &#10; 下一步 将利用项目来实践MVC软件设计模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/ChatAtTCP/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/chatattcp/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/ChatAtTCP/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/chatattcp/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/Day06/Demo03.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Day06/Demo03.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,15 +73,15 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Demo01">
-    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day07.Demo01" />
+  <component name="RunManager" selected="Application.CustomerView">
+    <configuration name="CustomerView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day08.CustomerInformation.ui.CustomerView" />
       <module name="JavaStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day07.*" />
+          <option name="PATTERN" value="Day08.CustomerInformation.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +154,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo01" />
-        <item itemvalue="Application.Demo03 (1)" />
-        <item itemvalue="Application.Demo02 (2)" />
-        <item itemvalue="Application.Demo03" />
-        <item itemvalue="Application.Demo02" />
+        <item itemvalue="Application.CustomerView" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +201,12 @@
       <workItem from="1610508041664" duration="1453000" />
       <workItem from="1610541457451" duration="9584000" />
       <workItem from="1610595912431" duration="14628000" />
-      <workItem from="1610632389219" duration="1777000" />
+      <workItem from="1610632389219" duration="2323000" />
+      <workItem from="1610768690209" duration="1860000" />
+      <workItem from="1610770885043" duration="187000" />
+      <workItem from="1610771084987" duration="2957000" />
+      <workItem from="1610774139337" duration="191000" />
+      <workItem from="1610774342777" duration="16324000" />
     </task>
     <task id="LOCAL-00001" summary="hahaha">
       <created>1606052457320</created>
@@ -364,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610552809075</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="2021.1.14  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习(中)&#10; 对面向对象复习 复习了封装性\构造器\关键字等功能&#10; 对MVC模式有了一个简单的了解 &#10; 下一步 将利用项目来实践MVC软件设计模式">
+      <created>1610634387480</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1610634387480</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +406,8 @@
     <MESSAGE value="2021.1.11  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习" />
     <MESSAGE value="2021.1.12  查漏补缺 复习javaSE部分的基础知识&#10;完成了面向对象之前的基础知识的复习 进入面向对象复习" />
     <MESSAGE value="2021.1.13  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习&#10; 对传值复习 以及补充了一些题目设计到的基础知识" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.1.13  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习&#10; 对传值复习 以及补充了一些题目设计到的基础知识" />
+    <MESSAGE value="2021.1.14  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习(中)&#10; 对面向对象复习 复习了封装性\构造器\关键字等功能&#10; 对MVC模式有了一个简单的了解 &#10; 下一步 将利用项目来实践MVC软件设计模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.1.14  查漏补缺 复习javaSE部分的基础知识&#10; 进入面向对象复习(中)&#10; 对面向对象复习 复习了封装性\构造器\关键字等功能&#10; 对MVC模式有了一个简单的了解 &#10; 下一步 将利用项目来实践MVC软件设计模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -412,5 +418,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
