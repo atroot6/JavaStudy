@@ -2,6 +2,9 @@ package Day08.CustomerInformation.CMUtility;
 
 import java.util.Scanner;
 
+/**
+ * 工具类
+ */
 public class readKeyboard {
     private char inputChar;
     private String inputString;
