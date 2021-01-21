@@ -12,6 +12,7 @@ public class person {
 
 
 
+
     public person() {
         this.name = "无参构造 初始化";
         this.age = 0;

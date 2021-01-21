@@ -1,6 +1,8 @@
 package com.example01;
 
-
+/**
+ * 对于super等关键字的理解使用
+ */
 //学生类继承人类
 public class student extends person {
     private int score;
