@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Demo01 {
-/*
+/**
 get time 方法用于获取当前系统时间的毫秒值(从1970.1.1 00:00:00 到现在为止的毫秒值) 相当于 System.currentTimeMillis()
 DateFormat 是个 抽象类 无法进行直接创建对象来使用 但是可以使用其DateFormat类的子类 java.text.SimpleDateFormat extends DateFormat
 用来格式化时间

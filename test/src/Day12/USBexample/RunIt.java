@@ -1,6 +1,5 @@
-package USBexample;
+package Day12.USBexample;
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class RunIt {

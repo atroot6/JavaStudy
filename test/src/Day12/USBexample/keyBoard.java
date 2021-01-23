@@ -1,4 +1,4 @@
-package USBexample;
+package Day12.USBexample;
 
 public class keyBoard implements USB {
 

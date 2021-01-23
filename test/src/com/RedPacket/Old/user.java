@@ -1,4 +1,4 @@
-package RedPacket.Old;
+package com.RedPacket.Old;
 
 //用户类
 public class user {

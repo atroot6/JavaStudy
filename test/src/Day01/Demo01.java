@@ -2,7 +2,7 @@ package Day01;
 
 
 public class Demo01 {
-    /*equals();
+    /**equals();
 对于equals的学习使用
 隶属于object类,所有类都会默认的继承其祖宗类->object 因此可以使用其equals方法
 equals方法的描述:

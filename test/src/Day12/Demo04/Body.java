@@ -1,4 +1,4 @@
-package com.example01;
+package Day12.Demo04;
 
 /**
  * 成员内部类

@@ -1,4 +1,4 @@
-package USBexample;
+package Day12.USBexample;
 
 public interface USB {
     public abstract void turnOn(); // USB设备打开
