@@ -1,4 +1,4 @@
-package part2.Day1.Demo01;
+package part2.Day1;
 
 /**
  * 创建三个窗口卖票，总票数为100

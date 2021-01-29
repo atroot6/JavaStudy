@@ -1,4 +1,4 @@
-package part2.Day1.Demo01;
+package part2.Day1;
 
 /**
  * Thread中常用的方法

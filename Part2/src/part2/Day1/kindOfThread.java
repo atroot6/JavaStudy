@@ -1,4 +1,4 @@
-package part2.Day1.Demo01;
+package part2.Day1;
 
 /**
  * 线程 一个程序可以分为多个线程、线程是程序内部的一条执行路径
