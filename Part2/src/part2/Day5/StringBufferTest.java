@@ -38,8 +38,17 @@ public class StringBufferTest {
          * 查 indexOf
          * 插 insert
          * 长度 length
-         * 遍历 toString \ for 循环
+         * 遍历 toString \ for 循环 +charAt
+         * String --> StringBuffer、StringBuilder ：直接调用他们的构造器String类型传参即可，反之亦然
+         * 也可以通过toString来转换
+         *
          */
+        String s3 = "abc";
+        StringBuffer stringBuffer = new StringBuffer(s3);
+        System.out.println(stringBuffer);
+        StringBuffer stringBuffer1 = new StringBuffer("def");
+        String s = stringBuffer1.toString();
+        System.out.println(s);
 
     }
 

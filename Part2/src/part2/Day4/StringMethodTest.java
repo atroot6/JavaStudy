@@ -16,6 +16,8 @@ public class StringMethodTest {
         System.out.println(s1.charAt(0));//H
         System.out.println(s1.charAt(6));//W
         System.out.println(s1.charAt(7));//o
+        //转换为char型数组  toCharArray
+
         //是否为空  返回布尔类型
         System.out.println(s1.isEmpty()); //false
         //转换大小写
@@ -80,12 +82,12 @@ public class StringMethodTest {
         char[] ch1 = new char[]{'h', 'e', 'l', 'l', 'o'};
         String ss = new String(ch1);
         System.out.println(ss);
-        //String 转换为 byte[]
+        //String 转换为 byte[]  使用getBytes() 获取一个字节类型的数组  默认情况下 是用的UTF-8编码模式 可指定编码模式为 gbk
         String str = "abc123汉字";
         byte[] bytes = str.getBytes();//默认采用UTF-8
         System.out.println(Arrays.toString(bytes));
         byte[] gbks = str.getBytes("gbk"); //采用gbk编码格式
-        System.out.println(Arrays.toString(gbks));
+        System.out.println(Arrays.toString(gbks));  //解码要和编码格式保持一直 否则会出现乱码的情况
 
 
     }

@@ -26,5 +26,9 @@ public class Demo01 {
         String f2 = s2.format(new Date());
         System.out.println(f1);
         System.out.println(f2);
+
+
+
+
     }
 }
