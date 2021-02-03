@@ -12,7 +12,19 @@ package part2.Day5;
  * 如果添加不下，那么就需要将原来的数组空充为原来的2倍 + 2，同时会将原有的数组复制到新的数组当中去
  * 建议使用StringBuffer类中的有参构造 指定大小 容量 StringBuffer(int capacity)
  * 三者效率：StringBuilder > StringBuffer > String
+ * <p>
+ * 增 append
+ * 删 delete
+ * 改 replace
+ * 查 indexOf
+ * 插 insert
+ * 长度 length
+ * 遍历 toString \ for 循环 +charAt
+ * String --> StringBuffer、StringBuilder ：直接调用他们的构造器String类型传参即可，反之亦然
+ * 也可以通过toString来转换
  */
+
+
 public class StringBufferTest {
     public static void main(String[] args) {
         StringBuffer s1 = new StringBuffer("abc");
@@ -31,18 +43,8 @@ public class StringBufferTest {
 //        indexOf() 查询字符第一次出现位置的索引
         String substring = s1.substring(0, 3); //返回索引区间内的一个子字符串 左开右闭
         System.out.println(substring);
-        /**
-         * 增 append
-         * 删 delete
-         * 改 replace
-         * 查 indexOf
-         * 插 insert
-         * 长度 length
-         * 遍历 toString \ for 循环 +charAt
-         * String --> StringBuffer、StringBuilder ：直接调用他们的构造器String类型传参即可，反之亦然
-         * 也可以通过toString来转换
-         *
-         */
+
+
         String s3 = "abc";
         StringBuffer stringBuffer = new StringBuffer(s3);
         System.out.println(stringBuffer);
