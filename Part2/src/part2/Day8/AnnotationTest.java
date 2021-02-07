@@ -3,6 +3,9 @@ package part2.Day8;
 import java.util.ArrayList;
 
 /**
+ * 三种基本注解  @Override \@Deprecated \@SuppressWarnings
+ * 分别为:重写\过时\抑制警告
+ *
  *
  */
 @Deprecated
