@@ -36,12 +36,12 @@ public class DateTimeTestForJDK8 {
         System.out.println(localDateTime.getMinute());
         System.out.println(localDateTime.getSecond());
 
-        //提现不可变性 localDate  with设置相关的时间
+        //体现了不可变性 localDate  with设置相关的时间
         LocalDateTime localDateTime1 = localDateTime.withDayOfMonth(18);
         System.out.println(localDateTime);//原来的时间 保持不变
         System.out.println(localDateTime1); //修改过日期后的时间
 
-        //
+        //在当前的基础上 增加\减少时间
         LocalDateTime localDateTime2 = localDateTime.plusDays(2);
 
         LocalDateTime localDateTime3 = localDateTime.minusDays(2);

@@ -10,7 +10,7 @@ import java.util.Date;
  * 练习
  */
 public class SimpleDateFormatTest {
-    //    字符串 转换为 java.sql。Date
+    //字符串 转换为 java.sql.Date
     @Test
     public void test1() throws ParseException {
         //将一个字符串转换为一个sql类的Date
@@ -21,8 +21,5 @@ public class SimpleDateFormatTest {
 
         java.sql.Date date = new java.sql.Date(parse.getTime());
         System.out.println(date);
-
-
-
     }
 }

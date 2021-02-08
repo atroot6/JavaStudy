@@ -9,6 +9,8 @@ import java.util.ArrayList;
  *
  */
 @Deprecated
+@MyAnnotation("dada")
+@MyAnnotation("dada")
 public class AnnotationTest {
     public static void main(String[] args) {
 
