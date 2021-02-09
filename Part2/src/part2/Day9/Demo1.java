@@ -2,9 +2,8 @@ package part2.Day9;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+
+import java.util.*;
 
 /**
  * 数组的特点
@@ -21,7 +20,8 @@ import java.util.Collection;
  */
 
 public class Demo1 {
-    @SuppressWarnings({"rawtypes", "unchecked", "ConstantConditions", "StringOperationCanBeSimplified"}) //去除警告
+    @SuppressWarnings({"rawtypes", "unchecked", "ConstantConditions", "StringOperationCanBeSimplified", "RedundantArrayCreation", "ArraysAsListWithZeroOrOneArgument"})
+    //去除警告
     @Test
     public void test1() {
 
@@ -71,9 +71,60 @@ public class Demo1 {
         coll.removeAll(coll1);
         System.out.println(coll); //[132]
 //9.retainAll(Collection coll);获取当前集合对象和形参里集合的交集,并返回给调用者
-        Collection coll2 = Arrays.asList(132,563);
+        Collection coll2 = Arrays.asList(132, 563);
         coll.retainAll(coll2);
         System.out.println(coll); //[132]
-    }
 //10.equals(Object obj); 比较两个集合里的元素是否一样  这里要注意区分 集合是否有序
+
+//11.hashcode(); 返回当前对象的哈希值
+
+//12.toArray(); 集合-->数组
+        Object[] objects = coll2.toArray();
+        System.out.println(Arrays.toString(objects));
+//13.数组-->集合 Arrays.asList();
+        List list = Arrays.asList(45, 66, 48, "hello world");
+        System.out.println(list); //[45, 66, 48, hello world]
+        System.out.println("长度为:" + list.size());//长度为:4
+
+        List<String> list1 = Arrays.asList(new String[]{"hello java", "你好"});
+        System.out.println(list1); //[hello java, 你好]
+        System.out.println("长度为:" + list1.size()); //长度为:2
+
+        List list3 = Arrays.asList(new int[]{1, 3, 5});
+        System.out.println("长度为:" + list3.size()); //长度为:1
+
+        List list4 = Arrays.asList(new Integer[]{154, 15, 33, 46});
+        System.out.println(list4);  //[154, 15, 33, 46]
+        System.out.println("长度为:" + list4.size()); //长度为:4
+
+//14.Iterator 遍历集合   用于遍历Collection集合
+//        注意:集合对象每次调用iterator()都会得到一个全新的迭代器
+        Iterator iterator = list4.iterator();
+        //方式一:
+//        System.out.println(iterator.next()); //每执行一次,遍历一个元素
+//        System.out.println(iterator.next());
+//        System.out.println(iterator.next());
+//        System.out.println(iterator.next());
+//        System.out.println(iterator.next()); //当超出数量时,会报异常
+
+        //方式二: 通过for循环遍历   不推荐使用
+//        for (int i = 0; i < list4.size(); i++) {
+//            System.out.println("第"+ (i+1) +"个元素"+ iterator.next());
+//        }
+        //方式三: 通过 配合hasNext()方法使用while循环
+        //hasNext() 判断下一个位置是否有元素
+        while (iterator.hasNext()) {
+//            next(),将指针下移,并输出下移后位置上的元素
+            System.out.println(iterator.next());
+        }
+        //迭代器Iterator内部定义了remove(),但不同于集合的remove()
+
+        //通过 foreach遍历集合  底层调用仍为Iterator迭代器
+        //for(声明一个形参:对象){调用输出形参对象完成遍历}
+        //for(声明集合元素的类型:集合对象)
+        for (Object obj : list4) {
+            System.out.println("from foreach: " + obj);
+        }
+
+    }
 }
