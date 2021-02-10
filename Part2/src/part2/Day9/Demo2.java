@@ -1,7 +1,5 @@
 package part2.Day9;
 
-import java.util.LinkedList;
-
 /**
  * Collection的子接口List
  * List中元素有序\可重复

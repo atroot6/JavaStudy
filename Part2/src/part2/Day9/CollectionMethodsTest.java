@@ -19,19 +19,19 @@ import java.util.*;
  * Collection接口常用的的方法
  */
 
-public class Demo1 {
+public class CollectionMethodsTest {
     @SuppressWarnings({"rawtypes", "unchecked", "ConstantConditions", "StringOperationCanBeSimplified", "RedundantArrayCreation", "ArraysAsListWithZeroOrOneArgument"})
     //去除警告
     @Test
     public void test1() {
 
 //1.add(Object obj); 添加一个元素  注意 在Collection接口的实现类对象中添加obj时,要求obj所在的类必须重写equals()方法
-        Collection coll = new ArrayList();
+        java.util.Collection coll = new ArrayList();
         coll.add(132);
         System.out.println(coll);  //[132]
 
 //2.addAll(Collection coll); 添加一个Collection的集合的全部元素到现有的集合中
-        Collection coll1 = new ArrayList();
+        java.util.Collection coll1 = new ArrayList();
         coll1.add(555);
         coll1.addAll(coll);
         System.out.println(coll1); //[555, 132]
@@ -71,7 +71,7 @@ public class Demo1 {
         coll.removeAll(coll1);
         System.out.println(coll); //[132]
 //9.retainAll(Collection coll);获取当前集合对象和形参里集合的交集,并返回给调用者
-        Collection coll2 = Arrays.asList(132, 563);
+        java.util.Collection coll2 = Arrays.asList(132, 563);
         coll.retainAll(coll2);
         System.out.println(coll); //[132]
 //10.equals(Object obj); 比较两个集合里的元素是否一样  这里要注意区分 集合是否有序
