@@ -42,7 +42,7 @@ public class CompareTest {
      * 我们直接用comparator接口
      *
      * Comparable 与 comparator 的对比
-     *  前者更适合用于 直接实现接口 ，之后在任何位置都可以直接调用compareTo方法  --一劳永逸
+     *  前者更适合用于 直接实现接口，之后在任何位置都可以直接调用compareTo方法  --一劳永逸
      *  后者 更适合于 不修改原来的代码，在任何位置直接新建一个comparator的实现匿名类，新建之后直接重写compare方法  --用一次new一次
      */
     @Test

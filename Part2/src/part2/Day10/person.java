@@ -1,5 +1,7 @@
 package part2.Day10;
 
+import java.util.Comparator;
+
 /**
  *ClassName: people
  *@Description: 人类
@@ -8,7 +10,7 @@ package part2.Day10;
  *@Version: 1.0
  */
 
-public class person {
+public class person implements Comparable {
     private String name;
     private int age;
     private String sex;
@@ -60,5 +62,35 @@ public class person {
                 ", age=" + age +
                 ", sex='" + sex + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        person person = (person) o;
+
+        if (age != person.age) return false;
+        if (name != null ? !name.equals(person.name) : person.name != null) return false;
+        return sex != null ? sex.equals(person.sex) : person.sex == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + age;
+        result = 31 * result + (sex != null ? sex.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof person){
+            person p = (person) o;
+            return Integer.compare(this.age,p.age);
+        }else{
+            throw new RuntimeException("数据异常！");
+        }
     }
 }
