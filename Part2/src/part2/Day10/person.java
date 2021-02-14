@@ -1,6 +1,5 @@
 package part2.Day10;
 
-import java.util.Comparator;
 
 /**
  *ClassName: people
@@ -10,6 +9,7 @@ import java.util.Comparator;
  *@Version: 1.0
  */
 
+@SuppressWarnings({"rawtypes", "unused"})
 public class person implements Comparable {
     private String name;
     private int age;
@@ -22,13 +22,11 @@ public class person implements Comparable {
     }
 
 
-
-
     public person() {
         this.name = "无参构造 初始化";
         this.age = 0;
         this.sex = "？";
-        System.out.println("姓名："+name+"年龄："+age+"性别："+sex);
+        System.out.println("姓名：" + name + "年龄：" + age + "性别：" + sex);
     }
 
     public String getName() {
@@ -86,10 +84,10 @@ public class person implements Comparable {
 
     @Override
     public int compareTo(Object o) {
-        if (o instanceof person){
+        if (o instanceof person) {
             person p = (person) o;
-            return Integer.compare(this.age,p.age);
-        }else{
+            return Integer.compare(this.age, p.age);
+        } else {
             throw new RuntimeException("数据异常！");
         }
     }

@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import java.util.*;
 
+import static jdk.nashorn.internal.objects.NativeArray.sort;
+
 /**
  *ClassName: SetTest
  *@Description: Set接口的描述
@@ -26,13 +28,13 @@ import java.util.*;
  *      1.HashSet 作为Set接口的主要实现类，线程不安全，可以存储null值
  *          2.LinkedHashSet作为HashSet的子类，遍历其中的元素，可以按照添加顺序来遍历，对于频繁的遍历操作，效率高于HashSet
  *              是因为，在HashSet的基础上在数组给每个元素都加上了指针，使数据变成双向链表。
- *      3.TreeSet
+ *      3.TreeSet 可以按照对象的指定属性进行排序，要求添加的数据是相同类的对象
  *
  *@Author: @theoldzheng@163.com
  *@Date: Create in 2021.2.10 16:03
  *@Version: 1.0
  */
-@SuppressWarnings({"rawtypes", "unchecked", "OverwrittenKey", "WhileLoopReplaceableByForEach"})
+@SuppressWarnings({"rawtypes", "unchecked", "OverwrittenKey", "WhileLoopReplaceableByForEach", "Convert2Lambda"})
 public class SetTest {
 //    Set的实现类HashSet的实现以及练习
 
@@ -70,16 +72,31 @@ public class SetTest {
         }
     }
 
-    //    TreeSet,向TreeSet中添加数据，要求是相同类的对象，两种排序方式：1.自然排序、定制排序
-//    自然排序中，比较两个对象是否相同的标准为：compareTo();返回0
+    //TreeSet,向TreeSet中添加数据，要求是相同类的对象，两种排序方式：1.自然排序、定制排序
+    //自然排序中，比较两个对象是否相同的标准为：compareTo();返回0,而不再是equals();方法
+    //定制排序中，比较两个对象是否相同的标准是compare();但是规则是一样的
     @Test
     public void test3() {
-        TreeSet treeSet = new TreeSet();
+        Comparator comparator = new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                if (o1 instanceof person && o2 instanceof person) {
+                    person p1 = (person) o1;
+                    person p2 = (person) o2;
+                    return p1.getName().compareTo(p2.getName());
+                } else {
+                    throw new RuntimeException("数据异常！");
+                }
+            }
+        };
+        TreeSet treeSet = new TreeSet(comparator);  //在有参数的情况下，会根据参数对象中所定义的排序方式进行排序，
+        // 若没有，将会按照添加的对象中实现的comparable接口后重写的compareTo();的规则进行排序
         treeSet.add(new person("小红", 33, "女"));
         treeSet.add(new person("阿刁", 22, "男"));
         treeSet.add(new person("小埋", 18, "女"));
-        Iterator iterator = treeSet.iterator();
 
+
+        Iterator iterator = treeSet.iterator();//通过age进行自然排序
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
