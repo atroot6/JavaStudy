@@ -15,7 +15,7 @@ import java.util.List;
  *@Date Create in 2021.2.10 13:43
  *@Version 1.0
  */
-public class ListFunctionTest {
+public class ListMethodTest {
     //add();添加元素
     @Test
     public void test() {

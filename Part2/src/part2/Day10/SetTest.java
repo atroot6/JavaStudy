@@ -77,6 +77,7 @@ public class SetTest {
     //定制排序中，比较两个对象是否相同的标准是compare();但是规则是一样的
     @Test
     public void test3() {
+        //编写比较规则
         Comparator comparator = new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
@@ -89,11 +90,12 @@ public class SetTest {
                 }
             }
         };
+        //应用比价规则
         TreeSet treeSet = new TreeSet(comparator);  //在有参数的情况下，会根据参数对象中所定义的排序方式进行排序，
         // 若没有，将会按照添加的对象中实现的comparable接口后重写的compareTo();的规则进行排序
-        treeSet.add(new person("小红", 33, "女"));
-        treeSet.add(new person("阿刁", 22, "男"));
-        treeSet.add(new person("小埋", 18, "女"));
+        treeSet.add(new person("孔乙己", 33, "女"));
+        treeSet.add(new person("祥林嫂", 22, "男"));
+        treeSet.add(new person("鲁迅", 18, "女"));
 
 
         Iterator iterator = treeSet.iterator();//通过age进行自然排序

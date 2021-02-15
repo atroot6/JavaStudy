@@ -46,8 +46,10 @@ public class CompareTest {
         g1[5] = new Goods("雪山盖顶", 8.0);
         g1[6] = new Goods("拔丝红薯", 8.0);
         Arrays.sort(g1);
-
-        System.out.println(Arrays.toString(g1));
+        for (int i = 0; i < g1.length; i++) {
+            System.out.println(g1[i]);
+        }
+//        System.out.println(Arrays.toString(g1));
     }
 
     /**
@@ -60,7 +62,7 @@ public class CompareTest {
     @Test
     public void test2() {
         String[] s1 = new String[]{"aa", "cc", "dd", "bb", "ee", "ff", "aa"};
-        Arrays.sort(s1, new Comparator() {  //创建匿名类 重写compareTo方法
+        Arrays.sort(s1, new Comparator() {  //创建匿名实现类 重写compare方法
 
             @Override
             public int compare(Object o1, Object o2) {
@@ -72,7 +74,7 @@ public class CompareTest {
                 throw new RuntimeException("数据类型不匹配！");
             }
         });
-        System.out.println(Arrays.toString(s1));
+        System.out.println(Arrays.toString(s1)); //[ff, ee, dd, cc, bb, aa, aa]
 
     }
 
