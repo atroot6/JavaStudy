@@ -45,8 +45,8 @@ public class SetTest {
         set.add(123);
         set.add("abc");
         set.add(123);
-        set.add(new person("小红", 29, "男"));
-        set.add(new person("小红", 29, "男"));
+        set.add(new person("小红", 29, Sex.MALE));
+        set.add(new person("小红", 29, Sex.MALE));
         Iterator iterator = set.iterator();
 
         while (iterator.hasNext()) {
@@ -63,8 +63,8 @@ public class SetTest {
         set.add(123);
         set.add("abc");
         set.add(123);
-        set.add(new person("小红", 29, "男"));
-        set.add(new person("小红", 29, "男"));
+        set.add(new person("小红", 29, Sex.MALE));
+        set.add(new person("小红", 29, Sex.MALE));
         Iterator iterator = set.iterator();
 
         while (iterator.hasNext()) {
@@ -93,9 +93,9 @@ public class SetTest {
         //应用比价规则
         TreeSet treeSet = new TreeSet(comparator);  //在有参数的情况下，会根据参数对象中所定义的排序方式进行排序，
         // 若没有，将会按照添加的对象中实现的comparable接口后重写的compareTo();的规则进行排序
-        treeSet.add(new person("孔乙己", 33, "女"));
-        treeSet.add(new person("祥林嫂", 22, "男"));
-        treeSet.add(new person("鲁迅", 18, "女"));
+        treeSet.add(new person("孔乙己", 33, Sex.FEMALE));
+        treeSet.add(new person("祥林嫂", 22, Sex.MALE));
+        treeSet.add(new person("鲁迅", 18, Sex.FEMALE));
 
 
         Iterator iterator = treeSet.iterator();//通过age进行自然排序

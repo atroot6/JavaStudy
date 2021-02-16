@@ -7,13 +7,13 @@ import java.util.List;
 
 
 /**
- *@Description List接口的方法
- * 总结:常用方法
+ * List接口的常用方法
+ * *@author  theoldzheng@163.com  @ZYD
+ * @version 1.0
+ * @description 总结:常用方法
  * 增add(Object obj) 删(remove(int index)\remove(Object obj)) 改(set(int index,Object ele)) 查get(int index)
  * 插add(int index,Object ele)  长度size()  遍历Iterator迭代器\foreach
- *@Author @theoldzheng@163.com
- *@Date Create in 2021.2.10 13:43
- *@Version 1.0
+ * @create in 2021.2.10 13:43
  */
 public class ListMethodTest {
     //add();添加元素
@@ -23,7 +23,7 @@ public class ListMethodTest {
         list.add(123);
         list.add(556);
         list.add("hello");
-        list.add(new person("小红", 23, "女"));
+        list.add(new person("小红", 23, Sex.FEMALE));
         System.out.println(list);//[123, 556, hello, person{name='小红', age=23, sex='女'}]
     }
 
@@ -34,9 +34,9 @@ public class ListMethodTest {
         list.add(123);
         list.add(556);
         list.add("hello");
-        list.add(new person("小红", 23, "女"));
+        list.add(new person("小红", 23, Sex.FEMALE));
         System.out.println(list);//[123, 556, hello, person{name='小红', age=23, sex='女'}]
-        list.add(2, new person("小黄", 22, "男"));
+        list.add(2, new person("小黄", 22, Sex.MALE));
         System.out.println(list); //[123, 556, person{name='小黄', age=22, sex='男'}, hello, person{name='小红', age=23, sex='女'}]
     }
 
@@ -48,7 +48,7 @@ public class ListMethodTest {
         list.add(123);
         list.add(556);
         list.add("hello");
-        list.add(new person("小红", 23, "女"));
+        list.add(new person("小红", 23, Sex.FEMALE));
         list1.add(45);
         list1.add(36);
         list1.add(86);
@@ -64,7 +64,7 @@ public class ListMethodTest {
         list.add(123);
         list.add(556);
         list.add("hello");
-        list.add(new person("小红", 23, "女"));
+        list.add(new person("小红", 23, Sex.FEMALE));
         System.out.println(list);//[123, 556, hello, person{name='小红', age=23, sex='女'}]
         System.out.println(list.get(3)); //person{name='小红', age=23, sex='女'}
     }
@@ -113,7 +113,7 @@ public class ListMethodTest {
         list.add(123);
         list.add(556);
         System.out.println("设置前:" + list); //设置前:[123, 123, 556]
-        list.set(0, new person("小明", 23, "男"));
+        list.set(0, new person("小明", 23, Sex.MALE));
         System.out.println("设置后:" + list); //设置后:[person{name='小明', age=23, sex='男'}, 123, 556]
     }
 
@@ -124,7 +124,7 @@ public class ListMethodTest {
         list.add(123);
         list.add(556);
         list.add("hello");
-        list.add(new person("小红", 23, "女"));
+        list.add(new person("小红", 23, Sex.MALE));
         List list1 = list.subList(1, 3);
         System.out.println(list); //[123, 556, hello, person{name='小红', age=23, sex='女'}]
         System.out.println(list1); //[556, hello]

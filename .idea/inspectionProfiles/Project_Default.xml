@@ -30,7 +30,9 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="Description,Date,Param,Author,Version,Description:,Author:,Date:,Version:" />
+      <option name="myAdditionalJavadocTags" value="" />
+      <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+      <option name="REQUIRED_TAGS" value="@author@version" />
     </inspection_tool>
   </profile>
 </component>

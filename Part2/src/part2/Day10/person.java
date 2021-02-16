@@ -2,31 +2,27 @@ package part2.Day10;
 
 
 /**
- *ClassName: people
- *@Description: 人类
- *@Author: @theoldzheng@163.com
- *@Date: Create in 2021.2.10 20:13
- *@Version: 1.0
+ * @ClassName: people
+ * @Description: 人类
+ * @Author: @theoldzheng@163.com
+ * @Date: Create in 2021.2.10 20:13
+ * @Version: 1.0
  */
 
 @SuppressWarnings({"rawtypes", "unused"})
 public class person implements Comparable {
     private String name;
     private int age;
-    private String sex;
-
-    public person(String name, int age, String sex) {
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
-    }
+    private Sex SEX = null;
 
 
     public person() {
-        this.name = "无参构造 初始化";
-        this.age = 0;
-        this.sex = "？";
-        System.out.println("姓名：" + name + "年龄：" + age + "性别：" + sex);
+    }
+
+    public person(String name, int age, Sex SEX) {
+        this.name = name;
+        this.age = age;
+        this.SEX = SEX;
     }
 
     public String getName() {
@@ -45,12 +41,12 @@ public class person implements Comparable {
         this.age = age;
     }
 
-    public String getSex() {
-        return sex;
+    public Sex getSex() {
+        return SEX;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setSex(Sex sex) {
+        this.SEX = sex;
     }
 
     @Override
@@ -58,7 +54,7 @@ public class person implements Comparable {
         return "person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", sex='" + sex + '\'' +
+                ", sex='" + SEX + '\'' +
                 '}';
     }
 
@@ -71,14 +67,14 @@ public class person implements Comparable {
 
         if (age != person.age) return false;
         if (name != null ? !name.equals(person.name) : person.name != null) return false;
-        return sex != null ? sex.equals(person.sex) : person.sex == null;
+        return SEX != null ? SEX.equals(person.SEX) : person.SEX == null;
     }
 
     @Override
     public int hashCode() {
         int result = name != null ? name.hashCode() : 0;
         result = 31 * result + age;
-        result = 31 * result + (sex != null ? sex.hashCode() : 0);
+        result = 31 * result + (SEX != null ? SEX.hashCode() : 0);
         return result;
     }
 
@@ -92,3 +88,4 @@ public class person implements Comparable {
         }
     }
 }
+
