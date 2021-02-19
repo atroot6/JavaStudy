@@ -2,7 +2,9 @@ package part2.Day13;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.TreeSet;
 
 /**
@@ -73,6 +75,17 @@ public class GenericTest {
         //2.其二，父类指定，本类也指定，本类继续为泛型类
         subEmployee1<Integer> sey = new subEmployee1<Integer>();
         sey.setT(22);
+    }
+
+    //测试调用定义的泛型方法，声明:泛型方法与其所属类是否为泛型类没有关系
+    @Test
+    public  void test04(){
+        subEmployee subEmployee = new subEmployee();
+        Integer [] integers = new Integer[]{1,2,3,4};
+
+        List <Integer> list = subEmployee.example(integers);
+
+        System.out.println(list);
     }
 
 
