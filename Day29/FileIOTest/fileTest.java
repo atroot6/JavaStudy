@@ -6,9 +6,9 @@ import java.io.File;
 import java.util.Date;
 
 /**
- * className: FileTest
+ * className: FileTest<p>
+ * description: 文件类File的使用
  * @author theoldzheng@163.com  @ZYD
- * @description 文件类File的使用
  * @create 2021.2.20 14:42
  */
 public class fileTest {
@@ -36,12 +36,17 @@ public class fileTest {
     public void test02() {
         File file1 = new File("hello.txt");
         File file2 = new File("D:\\zyd\\Study\\ideaWorkSpace\\JavaStudy\\hi.txt");
-
+        //获取绝对路径
         System.out.println(file1.getAbsoluteFile()); //D:\zyd\Study\ideaWorkSpace\JavaStudy\Part2\hello.txt
+        //获取相对路径
         System.out.println(file1.getPath()); //hello.txt
+        //获取文件名
         System.out.println(file1.getName()); //hello.txt
+        //获取其上层路径
         System.out.println(file1.getParent()); //null  只会在当前指定的hello.txt 相对路径下寻找
+        //获取文件长度---字节
         System.out.println(file1.length());  //7
+        //获取文件的最后修改时间
         System.out.println(new Date(file1.lastModified())); //Sat Feb 20 15:42:02 CST 2021
 
 
@@ -55,17 +60,28 @@ public class fileTest {
 
     @Test
     public void test03() {
-        File file = new File("D:\\zyd\\Study\\ideaWorkSpace\\JavaStudy");
+        File file = new File("D:\\zyd\\Study\\ideaWorkSpace\\JavaStudy");//必须保证路径是真是存在的  否则将会报空指针异常
         String[] list = file.list();
         for (String s: list){
             System.out.println(s);
         }
         System.out.println("**********");
+
         File file1 = new File("D:\\zyd\\Study\\ideaWorkSpace\\JavaStudy");
         File[] files = file1.listFiles();
         for (File file2:files) {
             System.out.println(file2);
         }
+    }
+
+    @Test
+    public void test04(){  //重命名操作，类似于Linux中的文件移动\重命名操作
+        File file = new File("hello.txt");  //被移动\重命名的文件必须存在，要移动到的位置必须是不存在的
+
+        File file1 = new File("D:\\zyd\\Study\\ideaWorkSpace\\JavaStudy\\Day29\\hi.txt");
+
+        boolean b = file.renameTo(file1);
+        System.out.println(b);
     }
 
 }
