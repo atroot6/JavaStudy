@@ -27,7 +27,7 @@ public class bufferedTest {
         System.out.println("成功拷贝，用时：" + (l1 - l) + "ms");
     }
 
-    public void NodeStream(String src,String dest){
+    public void NodeStream(String src, String dest) {
         FileInputStream fis = null;
         FileOutputStream fos = null;
         try {
@@ -66,6 +66,7 @@ public class bufferedTest {
             }
         }
     }
+
     //基于buffer缓冲流的文件拷贝方法
     public void bufferedStream(String src, String dest) {
         BufferedInputStream bis = null;

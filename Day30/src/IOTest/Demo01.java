@@ -161,6 +161,7 @@ public class Demo01 {
             while ((len = fr.read(src)) != -1) {
                 try {
                     fw.write(src, 0, len);
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
