@@ -8,12 +8,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * className: demo01<p>
+ * className: Demo01<p>
  * description:
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.21 18:08
  */
-public class demo01 {
+public class Demo01 {
     /**
      * File类声明在java.io包下
      * File类中涉及到关于文件或文件目录的创建、删除、重命名、修改时间、文件大小等方法，
@@ -37,6 +37,8 @@ public class demo01 {
      * Reader(处理字符char)           FileReader            BufferedReader          将字符流文件读入到内存
      * Writer                       FileWriter            BufferedWriter            将字符流文件写出到文件
      *
+     * 结论: 对于文本文件(.txt\.java\.c\.cpp等)，需要使用字符流来处理
+     *      对于非文本文件(.jpg\.mp3\.mp4\.doc等)，他们的底层为0 1数据，需要用字节流来处理
      */
 
     @Test
@@ -97,7 +99,6 @@ public class demo01 {
                 //正确写法:
                 String str = new String(cBuffer, 0, len);  //利用其构造器，指定读取的数组的个数，类似于上边
                 System.out.print(str);
-
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -142,7 +143,7 @@ public class demo01 {
         }
     }
 
-    //实现文件拷贝功能
+    //实现文件拷贝功能(文本文件)
     @Test
     public void test04() {
         FileReader fr = null;
@@ -150,10 +151,10 @@ public class demo01 {
         try {
 //        创建文件对象
             File srcDocument = new File("hello1.txt");
-            File descDocument = new File("D:\\zyd\\Study", "hello.txt");
+            File destDocument = new File("D:\\zyd\\Study", "hello.txt");
 //        创建文件读入、写出流对象
             fr = new FileReader(srcDocument);
-            fw = new FileWriter(descDocument, true);
+            fw = new FileWriter(destDocument, true);
 //        进行文件读入、写出操作
             char[] src = new char[5];
             int len;
