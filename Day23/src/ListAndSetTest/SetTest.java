@@ -4,8 +4,6 @@ import org.junit.Test;
 
 import java.util.*;
 
-import static jdk.nashorn.internal.objects.NativeArray.sort;
-
 /**
  *ClassName: SetTest
  *@Description: Set接口的描述

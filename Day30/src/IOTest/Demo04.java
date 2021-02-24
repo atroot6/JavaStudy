@@ -26,8 +26,8 @@ public class Demo04 {
 //            }
             //方式二：
             String buffer;
-            while((buffer = br.readLine()) != null){  //一次性读取一行
-                bw.write(buffer);  //默认情况下是不会换行的
+            while ((buffer = br.readLine()) != null) {  //一次性读取一行
+                bw.write(buffer);  //默认情况下是不会换行的，这里可以手动加上换行 “\n” ，或者加上bw.newLine();
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -47,6 +47,5 @@ public class Demo04 {
                 }
             }
         }
-
     }
 }

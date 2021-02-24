@@ -10,7 +10,7 @@ import java.io.*;
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.23 20:09
  */
-public class bufferedTest {
+public class Demo03 {
     /**
      * 缓冲流，提高流的读取、写入速度
      */
