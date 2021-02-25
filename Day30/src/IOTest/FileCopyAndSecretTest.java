@@ -13,7 +13,7 @@ import java.io.IOException;
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.24 12:31
  */
-public class Demo05 {
+public class FileCopyAndSecretTest {
     //这里以对图片的加密为例
     @Test
     public void test01() {

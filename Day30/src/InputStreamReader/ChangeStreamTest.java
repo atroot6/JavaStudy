@@ -10,7 +10,7 @@ import java.io.*;
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.24 19:13
  */
-public class Demo01 {
+public class ChangeStreamTest {
     //文本文档写入内存时，我们可以采用字节流读取到内存，再利用InputStreamReader来转换为字符流
     @Test
     public void test01() {

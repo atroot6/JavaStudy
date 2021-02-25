@@ -17,7 +17,7 @@ import java.util.Set;
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.24 13:03
  */
-public class Demo06 {
+public class WordCountTest {
     //实现文字技术功能（利用Map）
     @Test
     public void test01() {

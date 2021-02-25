@@ -10,7 +10,7 @@ import java.io.*;
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.23 23:59
  */
-public class Demo04 {
+public class BufferReaderAndWriterTest {
     @Test
     public void test01() {
         BufferedReader br = null;

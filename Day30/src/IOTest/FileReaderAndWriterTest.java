@@ -13,7 +13,7 @@ import java.io.IOException;
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.21 18:08
  */
-public class Demo01 {
+public class FileReaderAndWriterTest {
     /**
      * File类声明在java.io包下
      * File类中涉及到关于文件或文件目录的创建、删除、重命名、修改时间、文件大小等方法，

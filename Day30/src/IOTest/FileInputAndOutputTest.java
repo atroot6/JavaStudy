@@ -13,7 +13,7 @@ import java.io.IOException;
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.23 17:46
  */
-public class Demo02 {
+public class FileInputAndOutputTest {
     @Test
     public void test01() {
         FileInputStream fis = null;
