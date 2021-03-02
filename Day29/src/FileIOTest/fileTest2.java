@@ -13,11 +13,11 @@ import java.io.IOException;
  */
 public class fileTest2 {
     @Test
-    public void test01() throws IOException {
+    public void test01()  {
         File file = new File("file");
         boolean directory = file.isDirectory();
         if (directory) {
-            System.out.println("创建成功");
+            System.out.println("目录已经存在");
         } else {
             boolean mkdir = file.mkdir();
             if (mkdir) {
@@ -31,8 +31,12 @@ public class fileTest2 {
         File file3 = new File(file, "file3");
         File file4 = new File(file, "file4");
 
-        file1.createNewFile();
-        file2.createNewFile();
+        try {
+            file1.createNewFile();
+            file2.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         file3.mkdir();
         file4.mkdir();
 

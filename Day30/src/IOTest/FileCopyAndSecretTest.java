@@ -8,7 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * className: Demo05<p>
+ * className: FileCopyAndSecretTest<p>
  * description: 实现文件的加密、解密操作
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.24 12:31

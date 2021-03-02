@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * className: Demo06<p>
+ * className: WordCountTest<p>
  * description: WordCount
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.24 13:03

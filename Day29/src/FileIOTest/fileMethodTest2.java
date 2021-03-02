@@ -30,22 +30,22 @@ public class fileMethodTest2 {
     @Test
     public void test1() throws IOException {
         File file = new File("hello.txt");
-        if (!file.exists()){
+        if (!file.exists()) {
             file.createNewFile();
             System.out.println("文件不存在，创建成功！");
-        }else{
+        } else {
             file.delete();
             System.out.println("文件存在，删除成功！");
         }
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         File file = new File("D:\\zyd\\Study\\Study1");
         boolean mkdir = file.mkdir();
-        if (mkdir){
+        if (mkdir) {
             System.out.println("创建成功！");
-        }else{
+        } else {
             System.out.println("已存在,创建失败！");
             boolean delete = file.delete();
             System.out.println("已删除,可重新创建！");

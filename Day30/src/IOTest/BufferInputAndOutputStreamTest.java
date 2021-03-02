@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.*;
 
 /**
- * className: bufferedTest<p>
+ * className: BufferInputAndOutputStreamTest<p>
  * description: 缓冲流的测试
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.23 20:09
@@ -45,6 +45,7 @@ public class BufferInputAndOutputStreamTest {
 
             while ((len = fis.read(buffer)) != -1) {
                 fos.write(buffer, 0, len);
+                fos.flush();
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -88,6 +89,7 @@ public class BufferInputAndOutputStreamTest {
 
             while ((len = bis.read(buffer)) != -1) {
                 bos.write(buffer, 0, len);
+                bos.flush();
             }
         } catch (IOException e) {
             e.printStackTrace();

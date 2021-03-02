@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * className: Demo01<p>
+ * className: FileReaderAndWriterTest<p>
  * description:
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.21 18:08
@@ -20,7 +20,7 @@ public class FileReaderAndWriterTest {
      * 并未涉及到写入或读取文件内容的相关操作，如果需要读取或写入文件内容，必须使用IO流来完成
      * File的对象常会作为参数传递到流的构造器当中去，指明读取或写入文件的终点
      * <p>
-     * 在Idea中，
+     * 在IDEA中，
      * Junit的单元测试类的相对路径为当前module下，那么生成的文件、要读的文件，都应在module目录下
      * 而main()方法，对应的当前路径则为工程目录Project路径下
      * <p>
@@ -51,10 +51,10 @@ public class FileReaderAndWriterTest {
 
             fr = new FileReader(file);
             //3.进行文件读取
-            int read;
-            while ((read = fr.read()) != -1) {
-                System.out.print(read + " ");
-                System.out.print((char) read + " ");
+            int len;
+            while ((len = fr.read()) != -1) {
+                System.out.print(len + " ");
+                System.out.print((char) len + " ");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -130,6 +130,8 @@ public class FileReaderAndWriterTest {
             fw.write("Hello World ! This is a test.\n");
             fw.write("Hello World ! This is a test.\n");
             fw.write("Hello World ! This is a test.\n");
+
+            fw.flush();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -154,7 +156,7 @@ public class FileReaderAndWriterTest {
             File destDocument = new File("D:\\zyd\\Study", "hello.txt");
 //        创建文件读入、写出流对象
             fr = new FileReader(srcDocument);
-            fw = new FileWriter(destDocument, true);
+            fw = new FileWriter(destDocument, true); //append： false为默认模式，意为直接覆盖  true则为在原有文件的基础上进行追加
 //        进行文件读入、写出操作
             char[] src = new char[5];
             int len;

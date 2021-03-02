@@ -8,7 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * className: Demo02<p>
+ * className: FileInputAndOutputTest<p>
  * description: 利用FileInputStream等实现图片等类型文件的拷贝
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.23 17:46
@@ -33,6 +33,7 @@ public class FileInputAndOutputTest {
 
             while ((len = fis.read(buffer)) != -1) {
                 fos.write(buffer, 0, len);
+                fos.flush();
             }
         } catch (IOException e) {
             e.printStackTrace();

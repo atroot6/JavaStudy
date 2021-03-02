@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.*;
 
 /**
- * className: Demo01<p>
+ * className: ChangeStreamTest<p>
  * description: 处理流中的：转换流：字节流转换为字符流，字符流转换为字节流
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.24 19:13
@@ -29,7 +29,8 @@ public class ChangeStreamTest {
             int len;
             while ((len = isr.read(buffer)) != -1) {
                 //String str = new String(buffer,0,len);
-                //System.out.println(str);OutputStreamWriter osw = new OutputStreamWriter(fis);
+                //System.out.println(str);
+                // OutputStreamWriter osw = new OutputStreamWriter(fis);
                 for (int i = 0; i < buffer.length; i++) {
                     System.out.print(buffer[i]);
                 }

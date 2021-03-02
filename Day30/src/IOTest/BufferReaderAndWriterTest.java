@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.*;
 
 /**
- * className: Demo04<p>
+ * className: BufferReaderAndWriterTest<p>
  * description: BufferReaderAndBufferWriter的测试类
  * @author theoldzheng@163.com  @ZYD
  * @create 2021.2.23 23:59
@@ -23,11 +23,14 @@ public class BufferReaderAndWriterTest {
 //            int len;
 //            while ((len = br.read(buffer)) != -1) {
 //                bw.write(buffer, 0, len);
+//                bw.flush();
 //            }
             //方式二：
             String buffer;
             while ((buffer = br.readLine()) != null) {  //一次性读取一行
                 bw.write(buffer);  //默认情况下是不会换行的，这里可以手动加上换行 “\n” ，或者加上bw.newLine();
+                bw.flush();
+                bw.newLine();
             }
         } catch (IOException e) {
             e.printStackTrace();
