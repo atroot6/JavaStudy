@@ -17,64 +17,37 @@ public class TCPTest2 {
     @Test
     public void Server() {
         ServerSocket ss = null;
-        Socket accept = null;
         InputStream is = null;
-        FileOutputStream fos = null;
         BufferedOutputStream bos = null;
-        BufferedInputStream bis = null;
         try {
             ss = new ServerSocket(9999);
-            accept = ss.accept();
+            Socket accept = ss.accept();
             is = accept.getInputStream();
-            bis = new BufferedInputStream(is);
-
-            fos = new FileOutputStream("QQ图片复制版.jpg");
-            bos = new BufferedOutputStream(fos);
+            bos = new BufferedOutputStream(new FileOutputStream("QQ图片复制版.jpg"));
             int len;
-            byte[] buffer = new byte[1024];
-            while ((len = bis.read(buffer)) != -1) {
+            byte [] buffer = new byte[20];
+            while ((len = is.read(buffer)) != -1){
                 bos.write(buffer);
+                bos.flush();
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-//        关闭
-            if (bos != null) {
+            if (bos != null){
                 try {
                     bos.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            if (bis != null) {
-                try {
-                    bis.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (fos != null) {
-                try {
-                    fos.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (is != null) {
+            if (is != null){
                 try {
                     is.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            if (accept != null) {
-                try {
-                    accept.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (ss != null) {
+            if (ss != null){
                 try {
                     ss.close();
                 } catch (IOException e) {
@@ -85,45 +58,52 @@ public class TCPTest2 {
     }
 
     @Test
-    public void Cilent() {
-        BufferedInputStream bos = null;
+    public void Client() {
+        BufferedInputStream bis = null;
         Socket socket = null;
         OutputStream os = null;
-        BufferedOutputStream bis = null;
         try {
-            bis = new BufferedInputStream(new FileInputStream(new File("QQ图片.jpg")));
-            socket = new Socket(InetAddress.getByName("127.0.0.1"), 9999);
+//        创建输入流
+            bis = new BufferedInputStream(new FileInputStream("QQ图片.jpg"));
+//        创建套接字对象
+            InetAddress inet = InetAddress.getByName("localhost");
+            socket = new Socket(inet, 9999);
+//        创建输出流
             os = socket.getOutputStream();
+
             int len;
             byte[] buffer = new byte[20];
-
-            while ((len = bos.read(buffer)) != -1) {
-                os.write(buffer, 0, len);
+            while ((len = bis.read(buffer)) != -1) {
+                os.write(buffer);
+                os.flush();
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (os != null) {
-                try {
-                    os.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (socket != null) {
-                try {
-                    socket.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (bos != null) {
-                try {
-                    bos.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+        }
+        if (os != null){
+
+            try {
+                os.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
+        if (socket != null){
+            try {
+                socket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        if (bis != null){
+            try {
+                bis.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
     }
 }
