@@ -19,6 +19,7 @@ public class TCPTest2 {
         ServerSocket ss = null;
         InputStream is = null;
         BufferedOutputStream bos = null;
+        OutputStream outputStream = null;
         try {
             ss = new ServerSocket(9999);
             Socket accept = ss.accept();
@@ -27,12 +28,22 @@ public class TCPTest2 {
             int len;
             byte [] buffer = new byte[20];
             while ((len = is.read(buffer)) != -1){
-                bos.write(buffer);
+                bos.write(buffer,0,len);
                 bos.flush();
             }
+            outputStream = accept.getOutputStream();
+            outputStream.write("服务端接收完毕！".getBytes());
+
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+            if (outputStream != null){
+                try {
+                    outputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
             if (bos != null){
                 try {
                     bos.close();
@@ -74,9 +85,18 @@ public class TCPTest2 {
             int len;
             byte[] buffer = new byte[20];
             while ((len = bis.read(buffer)) != -1) {
-                os.write(buffer);
+                os.write(buffer,0,len);
                 os.flush();
             }
+            socket.shutdownOutput();
+            InputStream inputStream = socket.getInputStream();
+            int len1;
+            byte [] buffer1 = new byte[20];
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            while ((len1 = inputStream.read(buffer1)) != -1){
+                baos.write(buffer1,0,len1);
+            }
+            System.out.println(baos.toString());
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -103,7 +123,5 @@ public class TCPTest2 {
                 e.printStackTrace();
             }
         }
-
-
     }
 }
