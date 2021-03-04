@@ -41,6 +41,13 @@ public class person implements Comparable {
     public void setSex(Sex sex) {
         this.SEX = sex;
     }
+    public void showTest(String str,int a){
+        System.out.println("this is a common method!" + "  " + str + "   " + a );
+    }
+
+    public static void staticMethodTest(){
+        System.out.println("this is a static method!");
+    }
 
     @Override
     public String toString() {
